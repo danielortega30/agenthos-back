@@ -9,7 +9,7 @@ export const GetUser = createParamDecorator(
 
     if (authHeader && authHeader.startsWith('Bearer ')) {
       const token = authHeader.substring(7);
-      const jwtService = new JwtService({ secret: 'your-secret-key' }); // Use same secret as in auth.module
+      const jwtService = new JwtService({ secret: process.env.JWT_SECRET });
       const decoded = jwtService.decode(token);
       request.user = decoded;
     }
