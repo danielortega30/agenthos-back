@@ -22,8 +22,8 @@ DB_USERNAME=your_database_username
 DB_PASSWORD=your_database_password
 DB_DATABASE=your_database_name
 
-# Application Configuration
-PORT=3000
+# JWT Configuration
+JWT_SECRET=your_jwt_secret_key
 
 # Application Configuration
 PORT=3000
